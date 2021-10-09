@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body {
+  background-color: #282a36;
+}
+
+h1 {
+  color: #9e3f00;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  color: #f8f8f2;
+}
+
+.animes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style: none;
+  grid-gap: 1.5rem;
+  font-size: larger;
+  overflow: hidden;
+}
+
+.animes-list img {
+  max-width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 30%;
+}
+
+.animes-list img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
